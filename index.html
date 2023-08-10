@@ -39,13 +39,20 @@
         div span {
             margin: 0 5px;
         }
-        #audio1 {
+               .container {
+            position: relative;
+            width: 100%;
+            height: 100px;
+            /* 调整容器高度 */
+            /* 添加边框以便查看容器位置 */
+        }
+
+        .audio-container {
             position: absolute;
-            /* 设置为绝对定位 */
-            top: 1300px;
-            /* 距离顶部的距离 */
-            left: 45px;
-            /* 距离左侧的距离 */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
         }
 
         .myvideo {
@@ -116,10 +123,6 @@
         但是 足够幸运<br>
         你带给我的不仅仅是将我躁动的心抚平<br>
         更是让我的自信心又重新焕发<br>
-        现在依然觉得<br>
-        在贤德食堂后面那个高处<br>
-        淡黄色的灯光打在你脸上<br>
-        真的很好看<br>
     </p>
     <p>------------------------------------------------</p>
     <p>
@@ -127,6 +130,10 @@
         扭头看着身边的你 会感觉到些许的不真实<br>
         相处久了<br>
         在我眼中你还是一如既往的美<br>
+        现在依然觉得<br>
+        在贤德食堂后面那个高处<br>
+        淡黄色的灯光打在你脸上<br>
+        真的很好看<br>
         也许这种滤镜感会随着时间消失殆尽 变得透明 重新调回RGB模式 <br>
         但还是希望两个人保持同频 共同进步<br>
         彼此互相包容 互相理解<br>
@@ -159,7 +166,11 @@
     <video class="yourvideo" width="400" height="400" title="太钟意你啦我的小宝贝" controls>
         <source src="2.mp4" type="video/mp4">
     </video>
-    <audio id="audio1" controls>
-        <source src="1.MP3" type="audio/mpeg">
-    </audio>
+    <div class="container">
+        <div class="audio-container">
+            <audio controls>
+                <source src="1.MP3" type="audio/mpeg">
+            </audio>
+        </div>
+    </div>
 </html>
